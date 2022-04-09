@@ -1,7 +1,7 @@
 {
   "name": "IAmVedant",
   "version": "1.0.0",
-  "description": "This Is My Portfolio Website.",
+  "description": "This Is My Portfolio Website, I Has Created It In Hurry If You Find Any Mistake Please Contact Me.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
