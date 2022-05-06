@@ -420,6 +420,7 @@ body {
 
 .subProjectComponentDiv {
   display: flex;
+  align-items: baseline;
   flex-wrap: wrap;
   margin-top: 5rem;
   opacity: 0;
@@ -905,5 +906,38 @@ footer .footerMainDiv a {
   100% {
     left: -43px;
     top: -12px;
+  }
+}
+
+.forMoreContainer {
+  display: flex;
+  align-items: center;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+.forMoreContainer:hover {
+  background-color: rgb(48, 16, 80);
+}
+
+
+.finalAnimation {
+  animation-name: showOpacityEffect;
+  animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes showOpacityEffect {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
   }
 }
