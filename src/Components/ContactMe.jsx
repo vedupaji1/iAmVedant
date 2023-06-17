@@ -44,7 +44,7 @@ const ContactMe = () => {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(mailData)
                 };
-                let sendMessage = await fetch('https://sendmailtovedant.vercel.app/sendMail', requestOptions)
+                let sendMessage = await fetch('/sendMail', requestOptions)
                 let data = await sendMessage.json()
                 setIsLoading(false);
                 console.log(data)
