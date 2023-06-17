@@ -1,0 +1,949 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Balsamiq+Sans&family=Bebas+Neue&family=Inconsolata:wght@500&family=Inter:wght@700&family=Kanit:ital,wght@1,300&family=Mulish:ital,wght@0,900;1,900&family=PT+Sans:ital,wght@0,400;1,700&family=Prompt:wght@500&family=Rubik:wght@600&family=Secular+One&family=Source+Sans+Pro&family=Titillium+Web:wght@600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Balsamiq+Sans&family=Bebas+Neue&family=Inconsolata:wght@500&family=Inter:wght@700&family=Kanit:ital,wght@1,300&family=Mulish:ital,wght@0,900;1,900&family=PT+Sans:ital,wght@0,400;1,700&family=Poppins:wght@600&family=Prompt:wght@500&family=Rubik:wght@600&family=Secular+One&family=Source+Sans+Pro&family=Titillium+Web:wght@600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Balsamiq+Sans&family=Bebas+Neue&family=Inconsolata:wght@500&family=Inter:wght@700&family=Kanit:ital,wght@1,300&family=Mulish:ital,wght@0,900;1,900&family=PT+Sans:ital,wght@0,400;1,700&family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Prompt:wght@500&family=Rubik:wght@600&family=Secular+One&family=Source+Sans+Pro&family=Titillium+Web:wght@600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap");
+
+* {
+  font-family: "Roboto";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0c111b;
+}
+
+.mainNavDiv {
+  /* width: 100%; */
+  position: fixed;
+  z-index: 2;
+}
+
+.subNavDiv {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  color: white;
+  width: 25rem;
+  margin-left: 10rem;
+  background-color: black;
+  transition: all ease-in-out 0.2s;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  height: 7.7rem;
+  transition: all 0.2s;
+}
+
+.mainMenuHeader {
+  padding: 2rem 0rem 2rem 3rem;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #ff0077;
+}
+
+.menuLists {
+  padding: 1rem 0rem 1rem 2rem;
+  font-size: 1.8rem;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.menuLists:hover {
+  color: #ff0077;
+}
+
+.activeComponent {
+  color: #ff0077;
+}
+
+.css-cjctlb-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  /* font-size: 1.8rem; */
+  transform: scale(1.25);
+  transition: all 0.2s;
+}
+
+.css-cjctlb-MuiButtonBase-root-MuiTab-root {
+  font-size: 1.5rem !important;
+  color: red;
+}
+
+.MuiButton-root {
+  color: red;
+}
+
+/* Dashboard Component Styling */
+
+.dashboardMainDiv {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  background-color: #010701;
+  /* background-color: #0c111b; */
+}
+
+.dashboardMainDiv::before {
+  content: "";
+  background: url("https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    bottom center no-repeat;
+  /* background: url('https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') bottom center no-repeat; */
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.15;
+}
+
+.mainTechImageCube {
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: cubeRotation 15s linear infinite alternate;
+  transform-style: preserve-3d;
+  margin-top: 30vh;
+}
+
+.techImagesForCube {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+}
+
+.techImagesForCube img {
+  height: inherit;
+  width: inherit;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+#techImage1 {
+  transform: translate3d(0, 0, 150px);
+}
+
+#techImage2 {
+  transform: rotateY(180deg) translate3d(0, 0, 150px);
+}
+
+#techImage3 {
+  transform: rotateY(-90deg) translate3d(0, 0, 150px);
+}
+
+#techImage4 {
+  transform: rotateY(90deg) translate3d(0, 0, 150px);
+}
+
+#techImage5 {
+  transform: rotateX(90deg) translate3d(0, 0, 150px);
+}
+
+#techImage6 {
+  transform: rotateX(-90deg) translate3d(0, 0, 150px);
+}
+
+@keyframes cubeRotation {
+  to {
+    transform: rotateY(360deg) rotateY(480deg) rotateZ(720deg);
+  }
+}
+
+.developerDetails {
+  margin-top: 15rem;
+}
+
+.developerName span {
+  font-family: "Mulish", sans-serif;
+}
+
+.developerName {
+  font-family: "Mulish", sans-serif;
+  font-size: 4rem;
+  word-spacing: 0.5rem;
+  border-right: 0.15em solid #ffa000;
+  padding-right: 1rem;
+  animation: typingDeveloperName 2s steps(30, end), showDeveloperName 0.5s,
+    showHideCaret 0.75s step-end infinite;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.statusText {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-family: "Titillium Web", sans-serif;
+}
+
+@keyframes typingDeveloperName {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes showDeveloperName {
+  from {
+    transform: translate(-200px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes showHideCaret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
+/* AboutMe Component Styling */
+
+.mainAboutMeComponent {
+  width: 100%;
+  /* background-color: #f9f9ff; */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutMeHeader {
+  margin-top: 2.5rem;
+  font-size: 3rem;
+  font-family: "PT Sans", sans-serif;
+  transition: all 0.4s;
+  cursor: context-menu;
+}
+
+.aboutMeHeader:hover {
+  color: #6a6969;
+}
+
+.aboutMeDetails {
+  transform: translate(-50vw);
+  opacity: 0;
+  margin: 8rem 0rem 5rem 0rem;
+}
+
+.aboutMeDetails,
+.subAboutMeDetails {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+  width: 90rem;
+  transition: all 0.5s;
+}
+
+#aboutSubDetails1 {
+  margin-top: 5rem;
+  opacity: 0;
+  transform: translate(7vw);
+}
+
+#aboutSubDetails2 {
+  margin-top: 5rem;
+  opacity: 0;
+}
+
+.subAboutMeDetails {
+  width: 70rem;
+}
+
+.aboutMeInfo {
+  padding: 2rem 1.5rem 3rem 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 200%;
+  font-size: 1.6rem;
+}
+
+.aboutMePersonal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.aboutMePersonalInfo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.detailHeading {
+  font-family: poppins;
+  width: 10rem;
+}
+
+.subPersonalInfo {
+  display: flex;
+}
+
+.aboutMeDetailsHeader {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem 0rem 0.8rem 1.5rem;
+  display: flex;
+}
+
+#aboutMeDetailsHeaderSub {
+  margin-left: 2rem;
+  color: #464646;
+  transition: all 0.2s;
+}
+
+#aboutMeDetailsHeaderSub:hover {
+  color: #242424;
+}
+
+.aboutMeDetailsData {
+  font-size: 1.8rem;
+  padding: 2rem 1.5rem 3rem 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #484c50;
+}
+
+.developerDataBackground {
+  display: block;
+  box-sizing: border-box;
+  background-color: #0c111b;
+  clip-path: ellipse(300% 100% at 150% 0%);
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.developerDataBackground img {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+}
+
+.developerData {
+  z-index: 1;
+  margin-top: -30rem;
+  position: relative;
+}
+
+.developerImage img {
+  border: 1rem solid white;
+  border-radius: 50%;
+  height: 40rem;
+  width: 40rem;
+  object-fit: contain;
+  margin-left: 5rem;
+}
+
+/* Skills Component Styling */
+
+.mainSkillsComponent {
+  width: 100%;
+  min-height: 50rem;
+  background-color: #0c111b;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillIcons {
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 4rem;
+  margin: 1.5rem;
+  transition: all 0.5s;
+}
+
+.skillIcons:hover {
+  transform: scale(1.25);
+  font-size: 5rem;
+}
+
+.subSkillsComponent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10rem;
+  transition: all 0.5s;
+  transform: translate(0, 10vh);
+}
+
+.aboutCodingSkills {
+  color: #e2e2e2;
+}
+
+.aboutCodingSkills:hover {
+  color: #ffffff;
+}
+
+/* Experience Component Styling */
+.experienceShowerMainComponent {
+  background-color: #121926;
+  font-size: 160%;
+}
+
+.experienceShowerSubComponent {
+  width: 100%;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+
+.vertical-timeline-element-date {
+  color: white;
+}
+
+/* Projects Component Styling */
+
+.mainProjectComponentDiv {
+  width: 100%;
+  padding-bottom: 10rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subProjectComponentDiv {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  opacity: 0;
+  transform: translate(-20vw, 0);
+  transition: all 0.5s;
+}
+
+.projectDataDiv {
+  /* box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 17%); */
+  box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+  border-radius: 0.25rem;
+  margin: 2.5rem;
+  transition: all 0.2s;
+}
+
+.projectImageSlider {
+  width: 100%;
+}
+
+.imageContainer {
+  transition: all 0.2s;
+}
+
+.desktopView {
+  width: 45rem;
+  height: 29.7rem;
+}
+
+.desktopView:hover {
+  transform: scale(1.2);
+}
+
+.projectImageDesktop {
+  height: 23.4rem;
+  width: 45rem;
+  object-fit: fill;
+}
+
+.mobileView {
+  width: 28rem;
+  height: 71.4rem;
+}
+
+.mobileView:hover {
+  transform: scale(1.1);
+}
+
+.projectImageMobile {
+  height: 65rem;
+  width: 28rem;
+  object-fit: fill;
+}
+
+.containerForDesktopView {
+  height: 23.4rem;
+  width: 45rem;
+}
+
+.containerForMobileView {
+  height: 65rem;
+  width: 28rem;
+}
+
+/* .showIconsAndViewOption{
+  width: 100%;
+  height:6.3rem;
+} */
+
+.changeProjectView {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0rem 1rem 0rem;
+  /* border-top: 1px solid rgba(0, 0, 0, .125); */
+}
+
+.mobileIcon {
+  margin-left: 2rem;
+}
+
+.mobileIcon,
+.desktopIcon {
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #7a7a7a;
+}
+
+.stableStyleOnIcon {
+  color: #555555;
+  transform: scale(1.25);
+}
+
+.activeHoverOnIcon:hover {
+  color: #555555;
+  transform: scale(1.25);
+}
+
+.viewCodeShowerDiv {
+  text-align: center;
+  padding: 0rem 0rem 0.5rem 0rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-family: poppins;
+}
+
+.viewCodeShowerDiv a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ContactMe Component Styling */
+
+.mainContactMeDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0c111b;
+}
+
+.subContactMeDiv {
+  width: 50rem;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: #121926;
+  margin-top: 5rem;
+  justify-content: center;
+  padding-bottom: 8rem;
+}
+
+.userInputTaker {
+  width: 30rem;
+  border-radius: 2.5rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgb(18 25 38);
+  padding: 2rem;
+  margin: 0rem 0rem 3rem 0rem;
+  border: 0.1rem solid rebeccapurple;
+  line-height: 150%;
+}
+
+#userMessageTaker::placeholder,
+.userInputTaker::placeholder {
+  color: #c8c8c8;
+  opacity: 1;
+}
+
+#userMessageTaker:-ms-input-placeholder,
+.userInputTaker:-ms-input-placeholder {
+  color: #c8c8c8;
+}
+
+#userMessageTaker::-ms-input-placeholder,
+.userInputTaker::-ms-input-placeholder {
+  color: #c8c8c8;
+}
+
+#userMessageTaker {
+  width: 30rem;
+  height: 12rem;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 2.5rem;
+  color: white;
+  background-color: rgb(18 25 38);
+  padding: 2rem;
+  margin: 0rem 0rem 3rem 0rem;
+  border: 0.1rem solid rebeccapurple;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#userMessageTaker::-webkit-scrollbar {
+  display: none;
+}
+
+.imageUploadSubmit {
+  background-color: #047ecf;
+  color: white;
+  height: 3.5rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 3rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background-color 0.5s;
+}
+
+.imageUploadSubmit:hover {
+  background-color: #0095f6;
+}
+
+.contactMeHeader {
+  padding: 3rem;
+  color: #ff0077;
+  font-size: 3rem;
+  transition: color 0.2s;
+}
+
+/* Footer Styling */
+
+footer {
+  display: flex;
+  height: 25rem;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background-color: #0c111b;
+}
+
+.footerMainDiv {
+  display: flex;
+}
+
+footer .footerMainDiv a {
+  text-decoration: none;
+  margin-bottom: 5rem;
+}
+
+.socialMediaIconShower {
+  height: 4.5rem;
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 0.2rem solid white;
+  border-radius: 50%;
+  margin: 0rem 1rem 0rem 1rem;
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+
+.socialMediaIconShower:hover {
+  font-size: 2.5rem;
+  transform: scale(1.25);
+  box-shadow: none;
+}
+
+.siteRightsDetails {
+  color: white;
+  font-size: 1.5rem;
+  padding: 2rem 0rem 5rem 0rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Media Queries For Responsiveness */
+
+@media only screen and (max-width: 1500px) {
+  .subProjectComponentDiv {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .aboutMeDetails {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .subAboutMeDetails {
+    width: 90%;
+  }
+
+  .developerImage img {
+    border: 0.8rem solid white;
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .developerDataBackground {
+    height: 30rem;
+  }
+
+  .developerData {
+    margin-top: -15rem;
+  }
+
+  .subSkillsComponent {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .aboutMePersonal {
+    justify-content: initial;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainTechImageCube {
+    height: 18rem;
+    width: 18rem;
+  }
+
+  #techImage1 {
+    transform: translate3d(0, 0, 100px);
+  }
+
+  #techImage2 {
+    transform: rotateY(180deg) translate3d(0, 0, 100px);
+  }
+
+  #techImage3 {
+    transform: rotateY(-90deg) translate3d(0, 0, 100px);
+  }
+
+  #techImage4 {
+    transform: rotateY(90deg) translate3d(0, 0, 100px);
+  }
+
+  #techImage5 {
+    transform: rotateX(90deg) translate3d(0, 0, 100px);
+  }
+
+  #techImage6 {
+    transform: rotateX(-90deg) translate3d(0, 0, 100px);
+  }
+
+  .subNavDiv {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: white;
+    width: 25rem;
+    margin-left: 10%;
+  }
+
+  .subAboutMeDetails {
+    width: 95%;
+  }
+
+  .aboutMeDetailsDataAlternative {
+    padding: 2rem 0rem 3rem 0rem;
+  }
+
+  .dashboardMainDiv::before {
+    content: "";
+    background-color: #0c111b;
+    background: url("https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+      bottom center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+  }
+
+  .desktopView {
+    width: 28rem;
+    height: 20.86rem;
+  }
+
+  .projectImageDesktop {
+    height: 14.56rem;
+    width: 28rem;
+    object-fit: fill;
+  }
+
+  .containerForDesktopView {
+    height: 14.56rem;
+    width: 28rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .aboutMePersonal {
+    justify-content: initial;
+    padding-left: 2rem;
+  }
+
+  .developerDataBackground {
+    height: 25rem;
+  }
+
+  .aboutMeDetailsData {
+    padding: 2rem 1rem 3rem 1rem;
+  }
+
+  .developerImage {
+    display: flex;
+    justify-content: center;
+  }
+
+  .developerImage img {
+    margin-left: 0rem;
+  }
+
+  .developerImage img {
+    border: 0.5rem solid white;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .subSkillsComponent {
+    margin-bottom: 5rem;
+  }
+
+  .subContactMeDiv {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #emailIdShower {
+    display: block;
+  }
+}
+
+/* Loading Component Styling */
+
+.mainLoader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  background-color: #1f1b2dc4;
+}
+
+.subLoader {
+  color: white;
+  font-size: 4rem;
+  font-family: "Mulish", sans-serif;
+  background-color: #9799d1;
+  padding: 0.5rem 1.5rem;
+  border-radius: 100%;
+}
+
+.animatorDiv {
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #362e52;
+  position: relative;
+  animation: moveLoader 2s infinite;
+  animation-timing-function: ease-in-out;
+  left: -43px;
+  top: -12px;
+  border-radius: 50%;
+}
+
+@keyframes moveLoader {
+  0% {
+    left: -43px;
+    top: -12px;
+  }
+
+  25% {
+    left: -35.5px;
+    top: 12px;
+  }
+
+  50% {
+    left: -19.2px;
+    top: -12px;
+  }
+
+  75% {
+    left: -35.5px;
+    top: 12px;
+  }
+
+  100% {
+    left: -43px;
+    top: -12px;
+  }
+}
+
+.forMoreContainer {
+  display: flex;
+  align-items: center;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+.forMoreContainer:hover {
+  background-color: rgb(48, 16, 80);
+}
+
+.finalAnimation {
+  animation-name: showOpacityEffect;
+  animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes showOpacityEffect {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
