@@ -1,3 +1,3 @@
 # iAmVedant
 
-https://iamvedant.herokuapp.com
+[https://iamvedant.vercel.app](https://iamvedant.vercel.app)
