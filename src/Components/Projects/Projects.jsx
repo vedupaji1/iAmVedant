@@ -87,7 +87,7 @@ const Projects = () => {
     return (
         <>
             <div id="projectsComponent" className="mainProjectComponentDiv">
-                <h1 className="aboutMeHeader">Projects</h1>
+                <h1 className="aboutMeHeader">Personal Projects</h1>
                 <div className="subProjectComponentDiv">
                     <ProjectImageShower projectsImageData={projectImages.current[0][isDesktopMode[0]]} projectLink={projectImages.current[0][2]} isDesktopMode={isDesktopMode} setIsDesktopMode={setIsDesktopMode} componentKey={0} />
                     <ProjectImageShower projectsImageData={projectImages.current[1][isDesktopMode[1]]} projectLink={projectImages.current[1][2]} isDesktopMode={isDesktopMode} setIsDesktopMode={setIsDesktopMode} componentKey={1} />
